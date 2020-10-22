@@ -1,0 +1,52 @@
+{
+  "name": "tesonet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "test",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasmatulis0/tesonet.git"
+  },
+  "keywords": [
+    "tesonet",
+    "home",
+    "task"
+  ],
+  "author": "Tomas Matulis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomasmatulis0/tesonet/issues"
+  },
+  "homepage": "https://github.com/tomasmatulis0/tesonet#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@paysera/eslint-config": "^1.0.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-react": "^7.21.5",
+    "file-loader": "^6.1.1",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
