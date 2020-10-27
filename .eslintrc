@@ -3,5 +3,15 @@
     "env": {
         "browser": true,
         "node": true
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": [
+                ["@Assets", "./assets"],
+                ["@Components", "./src/js/components"],
+                ["@Hooks", "./src/js/hooks"],
+                ["@Config", "./src/js/config"]
+            ]
+        }
     }
 }
