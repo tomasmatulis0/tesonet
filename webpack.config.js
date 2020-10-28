@@ -12,13 +12,11 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
-                use: {
-                    loader: 'babel-loader',
-                },
+                use: ['babel-loader', 'astroturf/loader'],
             },
             {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.scss$/,
