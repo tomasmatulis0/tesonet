@@ -8,9 +8,11 @@
         "import/resolver": {
             "alias": [
                 ["@Assets", "./assets"],
-                ["@Components", "./src/js/components"],
                 ["@Hooks", "./src/js/hooks"],
-                ["@Config", "./src/js/config"]
+                ["@Config", "./src/js/config"],
+                ["@Services", "./src/js/services"],
+                ["@Components", "./src/js/components"]
+
             ]
         }
     },
