@@ -31,6 +31,10 @@ class AuthenticationManager {
     hasToken() {
         return sessionStorage.getItem(AUTHENTICATION_TOKEN) !== null;
     }
+
+    getToken() {
+        return sessionStorage.getItem(AUTHENTICATION_TOKEN);
+    }
 }
 
 export default new AuthenticationManager();

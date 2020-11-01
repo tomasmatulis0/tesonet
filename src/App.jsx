@@ -7,24 +7,33 @@ import {
 } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
-import { Login, ServersList } from '@Components';
+import { Login, ServersListPage } from '@Components';
 import { ROUTES } from '@Config';
 import { AuthenticationManager } from '@Assets/authentication';
+import { AUTHENTICATION_TOKEN } from '@Assets/authentication/config';
 
-const App = () => {
-    const history = createBrowserHistory();
+import './styles/index.scss';
 
-    return (
-        <Router history={history}>
-            <Switch>
-                <Route path={ROUTES.LOGIN} component={Login} />
-                <Route path={ROUTES.SERVERS_LIST} component={ServersList} />
-                <Route path={ROUTES.OTHER}>
-                    <Redirect to={AuthenticationManager.hasToken() ? ROUTES.SERVERS_LIST : ROUTES.LOGIN} />
-                </Route>
-            </Switch>
-        </Router>
-    );
-};
+const history = createBrowserHistory();
+window.addEventListener(
+    'storage',
+    (event) => {
+        if (event.storageArea === sessionStorage && event.key === AUTHENTICATION_TOKEN) {
+            history.push(ROUTES.LOGIN);
+        }
+    },
+);
+
+const App = () => (
+    <Router history={history}>
+        <Switch>
+            <Route path={ROUTES.LOGIN} component={Login} />
+            <Route path={ROUTES.SERVERS_LIST} component={ServersListPage} />
+            <Route path={ROUTES.OTHER}>
+                <Redirect to={AuthenticationManager.hasToken() ? ROUTES.SERVERS_LIST : ROUTES.LOGIN} />
+            </Route>
+        </Switch>
+    </Router>
+);
 
 export default memo(App);

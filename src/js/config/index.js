@@ -1,5 +1,9 @@
-import { ROUTES } from './routes';
+const OTHER = '*';
+const LOGIN = '/login';
+const SERVERS_LIST = '/servers-list';
 
-export {
-    ROUTES,
+export const ROUTES = {
+    OTHER,
+    LOGIN,
+    SERVERS_LIST,
 };

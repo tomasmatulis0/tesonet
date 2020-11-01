@@ -2,6 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import { App } from '../src';
 
-import './index.css';
+import './index.scss';
 
 render(<App />, document.getElementById('root'));
