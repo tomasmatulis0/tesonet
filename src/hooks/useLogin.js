@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { AuthenticationManager} from '@Services/authentication';
+import { AuthenticationManager } from '@Services/authentication';
 import { isUserNameValid, isPasswordValid } from '@Services';
 
 const wait = () => new Promise(resolve => setTimeout(() => resolve(), 1000));

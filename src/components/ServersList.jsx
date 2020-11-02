@@ -28,7 +28,7 @@ const ServersList = () => {
         <div className="bg-gray-200 w-full text-center">
             <div className="flex justify-between items-center p-2">
                 <div className="w-1/4">
-                    <img className="servers-list-logo" src={logo} alt='app logo' />
+                    <img className="servers-list-logo" src={logo} alt="app logo" />
                 </div>
                 <div className="pr-4">
                     <button
@@ -38,7 +38,7 @@ const ServersList = () => {
                             navigateToLogin();
                         }}
                     >
-                        <img className="mx-auto" src={logoutIcon} alt='logout logo' />
+                        <img className="mx-auto" src={logoutIcon} alt="logout logo" />
                         Logout
                     </button>
                 </div>

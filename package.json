@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "webpack-dev-server",
     "build": "webpack -p",
-    "lint": "eslint . --ext .js,.jsx"
+    "lint": "eslint src/**/*.{js,jsx}"
   },
   "repository": {
     "type": "git",
@@ -45,11 +45,12 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
-    "@paysera/eslint-config": "^1.0.0",
     "@testing-library/react": "^11.1.0",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^5.0.0",
     "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.21.5",

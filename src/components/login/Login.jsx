@@ -24,7 +24,7 @@ const Login = () => {
     return (
         <div className="h-full border-t border-l border-r border-gray-400 px-3 py-10 bg-gray-200 flex justify-center login-container">
             <div className="max-w-xs">
-                <img src={logo} alt='app logo' />
+                <img src={logo} alt="app logo" />
                 <form className="pb-2" onSubmit={login}>
                     <InputField
                         id="username"
