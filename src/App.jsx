@@ -14,8 +14,6 @@ import { AuthenticationManager } from '@Assets/authentication';
 import { AUTHENTICATION_TOKEN } from '@Assets/authentication/config';
 import { store } from './js/store';
 
-import './styles/index.scss';
-
 const history = createBrowserHistory();
 window.addEventListener(
     'storage',
