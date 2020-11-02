@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { ServerListManager } from '@Assets/server-list';
+import { ServerListManager } from '@Services/server-list';
 
 import { setServerList } from '../store/actions';
 

@@ -10,9 +10,8 @@ import { Provider } from 'react-redux';
 
 import { Login, ServersListPage } from '@Components';
 import { ROUTES } from '@Config';
-import { AuthenticationManager } from '@Assets/authentication';
-import { AUTHENTICATION_TOKEN } from '@Assets/authentication/config';
-import { store } from './js/store';
+import { AuthenticationManager, AUTHENTICATION_TOKEN } from '@Services/authentication';
+import { store } from '@Store';
 
 const history = createBrowserHistory();
 window.addEventListener(

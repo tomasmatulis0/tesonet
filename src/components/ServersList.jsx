@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { AuthenticationManager } from '@Assets/authentication';
+import { AuthenticationManager } from '@Services/authentication';
 import { useNavigate, useServersList } from '@Hooks';
 import logo from '@Assets/images/logo.png';
 import logoutIcon from '@Assets/icons/logout.svg';

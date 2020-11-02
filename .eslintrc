@@ -2,16 +2,18 @@
     "extends": "@paysera",
     "env": {
         "browser": true,
-        "node": true
+        "node": true,
+        "jest": true,
     },
     "settings": {
         "import/resolver": {
             "alias": [
                 ["@Assets", "./assets"],
-                ["@Hooks", "./src/js/hooks"],
-                ["@Config", "./src/js/config"],
-                ["@Services", "./src/js/services"],
-                ["@Components", "./src/js/components"]
+                ["@Store", "./src/store"],
+                ["@Hooks", "./src/hooks"],
+                ["@Config", "./src/config"],
+                ["@Services", "./src/services"],
+                ["@Components", "./src/components"]
 
             ]
         }

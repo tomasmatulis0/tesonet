@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
-import { AuthenticationManager } from '@Assets/authentication';
-import { useNavigate } from '@Hooks/index';
+import { AuthenticationManager } from '@Services/authentication';
+import { useNavigate } from '@Hooks';
 
 import ServersList from './ServersList';
 
