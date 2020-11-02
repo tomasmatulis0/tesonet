@@ -15,8 +15,8 @@ class ServerListManager {
             const response = await axios(config);
             return response.data;
         } catch (error) {
-            // Todo http errors
-            throw new Error(error.response.data.message);
+            const errorMessage = error?.response?.data?.message ?? 'Unexpected Error!';
+            throw new Error(errorMessage);
         }
     }
 }

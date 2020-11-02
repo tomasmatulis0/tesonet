@@ -9,7 +9,6 @@ const InputField = ({
     ...restProps
 }) => {
     const hasError = validationError !== null;
-    // Todo create error outline in tailwindcss
     const extraClass = hasError ? 'border-red-800 border-2' : 'border focus:shadow-outline';
 
     return (

@@ -19,8 +19,8 @@ class AuthenticationManager {
             const response = await axios(config);
             sessionStorage.setItem(AUTHENTICATION_TOKEN, response.data.token);
         } catch (error) {
-            // Todo http errors
-            throw new Error(error.response.data.message);
+            const errorMessage = error?.response?.data?.message ?? 'Unexpected Error!';
+            throw new Error(errorMessage);
         }
     }
 
