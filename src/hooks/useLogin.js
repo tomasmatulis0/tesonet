@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { AuthenticationManager } from '@Services/authentication';
 import { isUserNameValid, isPasswordValid } from '@Services';
 
-const wait = () => new Promise(resolve => setTimeout(() => resolve(), 1000));
 const updaterFactory = (validator, setValid, setValue) => (event) => {
     const text = event.target.value;
     if (validator(text)) {
@@ -37,8 +36,6 @@ const useLogin = (onSuccess) => {
 
         setIsLoading(true);
         setErrorMessage(null);
-
-        await wait();
 
         try {
             setErrorMessage(null);

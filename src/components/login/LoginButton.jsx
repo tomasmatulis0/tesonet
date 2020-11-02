@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import Loader from '../Loader';
+import SmallLoader from '../SmallLoader';
 
 const LoginButton = ({ isLoading }) => {
     const disabledClass = isLoading ? 'opacity-50 cursor-not-allowed' : '';
@@ -14,7 +14,7 @@ const LoginButton = ({ isLoading }) => {
             type="submit"
             disabled={isLoading}
         >
-            {isLoading ? <Loader /> : 'Log in'}
+            {isLoading ? <SmallLoader /> : 'Log in'}
         </button>
     );
 };
