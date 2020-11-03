@@ -17,7 +17,7 @@ class AuthenticationManager {
 
         try {
             const response = await axios(config);
-            sessionStorage.setItem(AUTHENTICATION_TOKEN, response.data.token);
+            localStorage.setItem(AUTHENTICATION_TOKEN, response.data.token);
         } catch (error) {
             const errorMessage = error?.response?.data?.message ?? 'Unexpected Error!';
             throw new Error(errorMessage);
@@ -25,15 +25,15 @@ class AuthenticationManager {
     }
 
     logout() {
-        sessionStorage.removeItem(AUTHENTICATION_TOKEN);
+        localStorage.removeItem(AUTHENTICATION_TOKEN);
     }
 
     hasToken() {
-        return sessionStorage.getItem(AUTHENTICATION_TOKEN) !== null;
+        return localStorage.getItem(AUTHENTICATION_TOKEN) !== null;
     }
 
     getToken() {
-        return sessionStorage.getItem(AUTHENTICATION_TOKEN);
+        return localStorage.getItem(AUTHENTICATION_TOKEN);
     }
 }
 

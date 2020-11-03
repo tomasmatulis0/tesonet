@@ -17,7 +17,7 @@ const history = createBrowserHistory();
 window.addEventListener(
     'storage',
     (event) => {
-        if (event.storageArea === sessionStorage && event.key === AUTHENTICATION_TOKEN) {
+        if (event.storageArea === localStorage && event.key === AUTHENTICATION_TOKEN) {
             history.push(ROUTES.LOGIN);
         }
     },
